@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hotel Website</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">	
+    <ul class="nav-list">
+      <li class="list-item"><a href="#" class="nav-first">Logo</a></li>
+      <li class="list-item"><a href="#">Rooms</a></li>
+      <li class="list-item"><a href="#">About</a></li>
+      <li class="list-item"><a href="#">Contact</a></li>
+      <li class="list-item"><a href="#" class="nav-last">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <header>
+  <!--<img src=".\images\header background.jpg" class="background-img" alt="The Hotel" style="width:1263px height:600px"/>-->
+  <div class="header-left">
+    <div class="container-heading">
+      <h2 class="hotel-name">Hotel Name</h2>
+    </div>
+    <div class="form-container">
+      <form class="availability-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Check In</label>
+            <input type="date" placeholder="DD MM YYYY" required>
+          </div>
+          <div class="form-group">
+            <label>Check Out</label>
+            <input type="date" placeholder="DD MM YYYY" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Adults</label>
+            <input type="number" value="1" min="1" max="6">
+          </div>
+          <div class="form-group">
+            <label>Kids</label>
+            <input type="number" value="0"  min="0" max="6">
+          </div>
+        </div>
+        <button type="submit" class="search-button">Search availability</button>
+      </form>
+    </div>
+  </div>
+</header>
+  <div class="rooms-container">
+    <div class="room-container">
+      <img src=".\images\room_single.jpg" alt="Single">
+      <div class="room-description">
+        <h3>Single Room</h3>
+        <h6>From $99</h6>
+        <p>Single bed</p>
+        <button class="room-button">Choose Room</button>
+      </div>
+    </div>
+    <div class="room-container">
+      <img src=".\images\room_double.jpg" alt="Double">
+      <div class="room-description">
+        <h3>Double Room</h3>
+        <h6>From $149</h6>
+        <p>Queen-size bed</p>
+        <button class="room-button">Choose Room</button>
+      </div>
+    </div>
+    <div class="room-container">
+      <img src=".\images\room_deluxe.jpg" alt="Deluxe">
+      <div class="room-description">
+        <h3>Deluxe Room</h3>
+        <h6>From $199</h6>
+        <p>King-size bed</p>
+        <button class="room-button">Choose Room</button>
+      </div>
+    </div>
+  </div>
+    <footer class="footer">
+      <p>&copy 2024 Naindeep Kaur</p>
+  </footer>
+</body>
+
+</html>
